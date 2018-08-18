@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  endpointsexamples:
+    image: ${DOCKER_REGISTRY}endpointsexamples
+    build:
+      context: .
+      dockerfile: ../src/EndPointsExamples/Dockerfile
