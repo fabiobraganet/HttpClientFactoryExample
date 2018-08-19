@@ -46,6 +46,7 @@ namespace UsageExample
             await Task.Run(()=> 
             {
                 Console.WriteLine("Realizando a captura dos dados");
+                _S2.Print();
                 return GetGoogle();
             });
 
@@ -67,7 +68,7 @@ namespace UsageExample
             Console.WriteLine("Iniciando o Serviço 2");
         }
 
-        public void Print() => Console.WriteLine("Aqui você poderia proceder com uma verificação ou operando uma persistencia de dados.");
+        public void Print() => Console.WriteLine("Obtendo o Serviço 2.");
 
         public void Dispose()
         {
